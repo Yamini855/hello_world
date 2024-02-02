@@ -1,11 +1,8 @@
-FROM ubuntu:latest
-
-RUN apt-get update && \
-apt-get install -y \
-curl \
-&& rm -rf /var/lib/apt/lists/*
+FROM python:3.8
 
 WORKDIR /app
 
-RUN echo "Hello, Docker!" > greeting.txt
+RUN echo "Hello, World" > hello.py
+
+CMD ["python", "hello.py"]
 
