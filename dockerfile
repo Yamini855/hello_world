@@ -7,7 +7,7 @@ curl \
 
 WORKDIR /app
 
-echo "Hello, Docker!" > greeting.txt
+"Hello, Docker!" RUN echo "Hello, Docker!" > greeting.txt
 
 CMD["cat","greeting.txt"]
 
