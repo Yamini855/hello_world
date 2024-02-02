@@ -9,5 +9,5 @@ WORKDIR /app
 
 RUN echo "Hello, Docker!" > greeting.txt
 
-CMD["cat", "greeting.txt"]
+CMD ["cat", "greeting.txt"]
 
